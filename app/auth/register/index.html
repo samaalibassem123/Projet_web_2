@@ -20,7 +20,7 @@
         },
       };
     </script>
-    <title>Login</title>
+    <title>Register</title>
   </head>
   <body>
     <!-- Header -->
@@ -32,7 +32,7 @@
       >
         <div class="flex items-center">
           <h1 class="text-xl md:text-2xl font-serif">
-            Bloogers<span class="text-primary">Hub</span>
+            BloogersHub</span>
           </h1>
         </div>
         <div class="flex items-center space-x-4">
@@ -66,26 +66,33 @@
         class="text-center flex flex-col shadow-md p-10 gap-10 w-[500px]"
       >
         <div>
-          <legend class="font-serif font-bold text-2xl">Welcome Back</legend>
+          <legend class="font-serif font-bold text-2xl">
+            Join BloogersHub
+          </legend>
           <span class="text-sm text-gray-500"
-            >Sign in to access your account</span
+            >Create an account to start</span
           >
         </div>
         <input
           type="text"
-          class="border-b outline-none font-serif text-md"
+          class="border-b outline-none font-serif text-md p-1"
           placeholder="Username"
           name="username"
         /><input
           type="password"
-          class="border-b outline-none font-serif text-md"
-          placeholder="*********"
+          class="border-b outline-none font-serif text-md p-1"
+          placeholder="password"
           name="password"
-        />
+        /><input
+        type="password"
+        class="border-b outline-none font-serif text-md p-1"
+        placeholder="confirm your password"
+        name="Cpassword"
+      />
         <input
           type="submit"
           class="border p-2 hover:bg-black/80 hover:text-white cursor-pointer transition-all"
-          value="Login"
+          value="Register"
         />
       </form>
     </main>
