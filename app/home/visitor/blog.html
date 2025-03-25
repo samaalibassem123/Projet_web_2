@@ -57,7 +57,7 @@
             <path d="M4 2C2.8 3.7 2 5.7 2 8" />
           </svg>
           Notifications</a>
- 
+
       </div>
       <div class="flex items-center space-x-4">
         <a href="/app/page.html"
@@ -90,8 +90,10 @@
 
       <!--ADD COMMENTS-->
       <form action="" method="post" class="flex gap-3">
-        <input type="text" name="comment"  class="outline-none border w-[90%] p-2 font-serif" placeholder="Add a comment down Here">
-        <input type="submit" value="post" class="border px-8 bg-black/80 text-white font-serif cursor-pointer hover:bg-black transition-all">
+        <input type="text" name="comment" class="outline-none border w-[90%] p-2 font-serif"
+          placeholder="Add a comment down Here">
+        <input type="submit" value="post"
+          class="border px-8 bg-black/80 text-white font-serif cursor-pointer hover:bg-black transition-all">
       </form>
 
 
@@ -112,11 +114,8 @@
                 <input type="submit" class="text-sm underline text-gray-400 cursor-pointer hover:text-red-400"
                   value="Delete comment">
               </form>
-                <!--UPDATE COMMENTS FORM-->
-                 <form action="" method="post" class="px-2">
-                  <input type="submit" class="text-sm underline text-gray-400 cursor-pointer hover:text-green-400"
-                    value="Edit comment">
-                </form>
+              <!--EDIT COMMENTS BUTTON-->
+              <button class="text-sm underline text-gray-400 cursor-pointer hover:text-green-400">Edit comment</button>
             </div>
 
           </div>
@@ -126,6 +125,18 @@
       </div>
     </div>
   </main>
+
+  <section class="backdrop-blur-sm absolute top-0 left-0 z-50 w-full h-svh flex flex-col items-center justify-center focus:hidden">
+    <!--UPDATE THE COMMENTS-->
+    <form action="" method="post" class="flex flex-col p-4 w-[500px] gap-3 bg-white">
+      <legend class="font-bold underline">Update the Comment</legend>
+      <input type="text" name="comment" class="outline-none border w-full p-2 font-serif"
+        placeholder="Type the new comment">
+      <input type="submit" value="Update"
+        class="border px-8 p-2 bg-black/80 text-white font-serif cursor-pointer hover:bg-black transition-all">
+    </form>
+  </section>
+
 </body>
 
 </html>
